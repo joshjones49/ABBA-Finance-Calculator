@@ -14,6 +14,7 @@
 
 body {
     background-color: var(--timberwolf);
+    display: flex;
 }
 
 .menu-div {
@@ -51,4 +52,33 @@ img {
 .menu-div > div {
     display: flex;
     flex-direction: column;
+}
+
+.display-div {
+    border-left: 3px solid var(--cerulean);
+    height: 100vh;
+    width: 78vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50vw;
+    color: black;
+    font-size: 70px;
+}
+
+.home-div > h1 > span {
+    color: var(--asparagus);
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
