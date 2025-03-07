@@ -159,6 +159,10 @@ img {
     width: 80%;
     border: none;
     border-radius: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 .submit-btn {
