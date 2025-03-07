@@ -64,7 +64,7 @@ img {
 }
 
 .home-div {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -84,7 +84,7 @@ img {
 }
 
 .ci-div {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 70vw;
     height: 90vh;
