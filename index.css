@@ -98,7 +98,6 @@ img {
 }
 
 .calc-div > div {
-    border: 1px solid black;
     height: 50%;
 }
 
@@ -133,4 +132,46 @@ img {
     height: 50px;
     text-align: center;
     font-size: 20px;
+}
+
+.ci-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ci-bottom > div {
+    border: 1px solid black;
+    height: 60%;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--timberwolf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px black;
+}
+
+.ci-bottom > div > div {
+    background-color: white;
+    height: 60%;
+    width: 80%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.submit-btn {
+    height: 60%;
+    width: 15%;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    background-color: var(--cerulean);
+    font-size: 30px;
+    color: white;
+}
+
+.submit-btn:active {
+    background-color: var(--asparagus);
 }
