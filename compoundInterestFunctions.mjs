@@ -9,11 +9,20 @@ export let submitted = false;
 
 //function to calculate compound interest
 export const compoundInterest = () => {
+
     submitted = !submitted;
     let principal = parseFloat(Principal.value);
     let rate = parseFloat(Rate.value) / 100;
     let compound = parseFloat(xCompound.value);
     let years = parseFloat(Years.value);
+
+    if(isNaN(principal) || isNaN(rate) || isNaN(compound) || isNaN(years)) {
+        console.log('Empty Fields')
+        Amount.innerHTML = 'No fields can be empty'
+        Amount.style.fontSize = '50px';
+        console.log('Alerted')
+        return;
+    }
 
     let amount = principal * Math.pow(1 + rate / compound, compound*years)
 

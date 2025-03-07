@@ -6,4 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     func.submitted ? func.Clear() : func.compoundInterest()
     })
 
+    
+
 })
