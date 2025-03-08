@@ -4,7 +4,7 @@ export const Rate = document.querySelector('.Rate');
 export const xCompound = document.querySelector('.xCompounded');
 export const Years = document.querySelector('.Years');
 export const Amount = document.querySelector('.Amount');
-export const Submit = document.querySelector('.submit-btn');
+export const Submit = document.querySelector('.ci-submit-btn');
 export let submitted = false;
 
 //function to calculate compound interest

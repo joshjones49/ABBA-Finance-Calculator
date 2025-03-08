@@ -53,7 +53,7 @@ img {
     display: flex;
     flex-direction: column;
 }
-
+/* ============================DISPLAY DIV======================================= */
 .display-div {
     border-left: 3px solid var(--cerulean);
     height: 100vh;
@@ -62,9 +62,9 @@ img {
     justify-content: center;
     align-items: center;
 }
-
+/* =============================HOME PAGE====================================== */
 .home-div {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -82,7 +82,7 @@ img {
     -1px  1px 0 #000,
      1px  1px 0 #000;
 }
-
+/* =============================COMPOUND INTEREST PAGE============================== */
 .ci-div {
     display: none;
     flex-direction: column;
@@ -102,7 +102,12 @@ img {
 }
 
 .ci-header {
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.ci-header > h4 {
+    font-size: 25px;
+    font-style: italic;
 }
 
 .ci-top {
@@ -165,7 +170,7 @@ img {
     font-size: 50px;
 }
 
-.submit-btn {
+.ci-submit-btn {
     height: 60%;
     width: 15%;
     border: none;
@@ -176,6 +181,24 @@ img {
     color: white;
 }
 
-.submit-btn:active {
+.ci-submit-btn:active {
     background-color: var(--asparagus);
+}
+
+/* =============================MONTHLY PAYMENT PAGE====================================== */
+
+.mp-page {
+    display: flex;
+    height: 90vh;
+    width: 70vw;
+    flex-direction: column;
+}
+
+.mp-page > h1 {
+    font-size: 40px;
+}
+
+.mp-page > h4 {
+    font-style: italic;
+    font-size: 25px;
 }
