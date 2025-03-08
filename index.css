@@ -85,7 +85,6 @@ img {
 }
 /* ==============================PAGES=========================================== */
 .page {
-    border: 1px solid black;
     flex-direction: column;
     height: 90vh;
     width: 70vw;
@@ -108,19 +107,12 @@ img {
 /* =================================PAGE ELEMENTS============================================= */
 /* HEADER */
 .page-header {
-    border: 1px solid red;
     width: 100%;
-    height: 30%;
+    height: 20%;
 }
 
 .page-header > h1 {
     font-size: 70px;
-    color: var(--cerulean);
-    text-shadow: 
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
 }
 
 .page-header > h4 {
@@ -132,17 +124,87 @@ img {
 .calc-div {
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: 80%;
     width: 100%;
-    border: 2px solid blue;
+    justify-content: space-between;
 }
 
 .calc-top {
     display: flex;
     flex-direction: row;
-    border: 1px solid greenyellow;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-divs {
+    background-color: var(--cerulean);
+    border-radius: 15px;
+    height: 65%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 0px 4px gray;
+}
+
+.input-divs > h3 {
+    font-size: 2em;
+}
+
+.inputs {
+    border-radius: 10px;
+    border: none;
+    height: 30%;
+    width: 90%;
+    font-size: 27px;
+    text-align: center;
 }
 
 .calc-bottom {
-    border: 1px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.display-amount-div {
+    background-color: var(--cerulean);
+    width: 99%;
+    height: 40%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px gray;
+}
+
+.amount {
+    color: black;
+}
+
+.display-amount {
+    height: 50%;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+}
+
+.submit-btn {
+    height: 50%;
+    width: 10%;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 25px;
+    color: white;
+    background-color: var(--asparagus);
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: var(--eerie-black);
 }

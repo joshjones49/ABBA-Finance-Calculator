@@ -3,7 +3,7 @@ export const Principal = document.querySelector('#Principal');
 export const Rate = document.querySelector('#Rate');
 export const xCompound = document.querySelector('#xCompounded');
 export const Years = document.querySelector('#Years');
-export const Amount = document.querySelector('.Amount');
+export const Amount = document.querySelector('#ci-amount');
 export const CI_Submit = document.querySelector('#ci-submit');
 export let submitted = false;
 
