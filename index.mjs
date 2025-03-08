@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //USED TO SUBMIT INPUTS AND CALCULATE AND THEN CLEAR INPUTS
-    func.Submit.addEventListener('click', () => {
+    func.CI_Submit.addEventListener('click', () => {
         func.submitted ? func.Clear() : func.compoundInterest()
     })
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateDisplay('CI')
     })
 
-    route.HOME_BTN.addEventListener('click', () => {
+    route.HOME_PAGE_BTN.addEventListener('click', () => {
         console.log('HOME')
         updateDisplay('HOME')
     })

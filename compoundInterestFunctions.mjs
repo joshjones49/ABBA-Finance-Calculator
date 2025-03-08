@@ -1,10 +1,10 @@
 //==========Exports for the Compound Interest page=============
-export const Principal = document.querySelector('.Principal');
-export const Rate = document.querySelector('.Rate');
-export const xCompound = document.querySelector('.xCompounded');
-export const Years = document.querySelector('.Years');
+export const Principal = document.querySelector('#Principal');
+export const Rate = document.querySelector('#Rate');
+export const xCompound = document.querySelector('#xCompounded');
+export const Years = document.querySelector('#Years');
 export const Amount = document.querySelector('.Amount');
-export const Submit = document.querySelector('.ci-submit-btn');
+export const CI_Submit = document.querySelector('#ci-submit');
 export let submitted = false;
 
 //function to calculate compound interest
@@ -29,9 +29,9 @@ export const compoundInterest = () => {
     Amount.innerHTML = "$"+amount.toFixed(2);
 
     if (submitted) {
-        Submit.innerHTML = 'Clear';
+        CI_Submit.innerHTML = 'Clear';
     } else {
-        Submit.innerHTML = 'Submit';
+        CI_Submit.innerHTML = 'Submit';
     }
     console.log(submitted);
 }
@@ -43,7 +43,7 @@ export const compoundInterest = () => {
     Rate.value = "";
     xCompound.value = "";
     Years.value = "";
-    Submit.innerHTML = 'Submit'
+    CI_Submit.innerHTML = 'Submit'
     Amount.innerHTML = "";
     console.log(submitted)
 }

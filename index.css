@@ -10,13 +10,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: white;
     display: flex;
 }
-
+/* =================================MENU===================================== */
 .menu-div {
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@ body {
 .menu-div > div > button {
     background-color: var(--eerie-black);
     border: none;
-    width: 200px;
+    width: 250px;
     height: 60px;
     color: white;
     font-size: 20px;
@@ -63,7 +64,7 @@ img {
     align-items: center;
 }
 /* =============================HOME PAGE====================================== */
-.home-div {
+.home-page {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -71,10 +72,10 @@ img {
     height: 80vh;
     width: 50vw;
     color: black;
-    font-size: 70px;
+    font-size: 60px;
 }
 
-.home-div > h1 > span {
+.home-page > h1 > span {
     color: var(--asparagus);
     text-shadow: 
     -1px -1px 0 #000,  
@@ -82,123 +83,66 @@ img {
     -1px  1px 0 #000,
      1px  1px 0 #000;
 }
-/* =============================COMPOUND INTEREST PAGE============================== */
-.ci-div {
-    display: none;
+/* ==============================PAGES=========================================== */
+.page {
+    border: 1px solid black;
     flex-direction: column;
-    width: 70vw;
     height: 90vh;
+    width: 70vw;
     justify-content: space-between;
+    align-items: center;
+}
+
+.home-page {
+    display: none;
+}
+
+#mp-page {
+    display: none;
+}
+
+#ci-page {
+    display: flex;
+}
+
+/* =================================PAGE ELEMENTS============================================= */
+/* HEADER */
+.page-header {
+    border: 1px solid red;
+    width: 100%;
+    height: 30%;
+}
+
+.page-header > h1 {
+    font-size: 70px;
+    color: var(--cerulean);
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.page-header > h4 {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--eerie-black);
 }
 
 .calc-div {
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 70%;
+    width: 100%;
+    border: 2px solid blue;
 }
 
-.calc-div > div {
-    height: 50%;
-}
-
-.ci-header {
-    font-size: 30px;
-}
-
-.ci-header > h4 {
-    font-size: 25px;
-    font-style: italic;
-}
-
-.ci-top {
+.calc-top {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    border: 1px solid greenyellow;
 }
 
-.ci-top > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--timberwolf);
-    height: 45%;
-    width: 20%;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
-    font-size: 23px;
-}
-
-.ci-top > div > input {
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.ci-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ci-bottom > div {
-    border: 1px solid black;
-    height: 60%;
-    width: 95%;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--timberwolf);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px black;
-}
-
-.ci-bottom > div > div {
-    background-color: white;
-    height: 60%;
-    width: 80%;
-    border: none;
-    border-radius: 5px 0px 0px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-
-.ci-submit-btn {
-    height: 60%;
-    width: 15%;
-    border: none;
-    border-radius: 0px 5px 5px 0px;
-    cursor: pointer;
-    background-color: var(--cerulean);
-    font-size: 30px;
-    color: white;
-}
-
-.ci-submit-btn:active {
-    background-color: var(--asparagus);
-}
-
-/* =============================MONTHLY PAYMENT PAGE====================================== */
-
-.mp-page {
-    display: flex;
-    height: 90vh;
-    width: 70vw;
-    flex-direction: column;
-}
-
-.mp-page > h1 {
-    font-size: 40px;
-}
-
-.mp-page > h4 {
-    font-style: italic;
-    font-size: 25px;
+.calc-bottom {
+    border: 1px solid orange;
 }
