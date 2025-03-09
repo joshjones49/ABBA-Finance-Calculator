@@ -107,15 +107,15 @@
                     <div class="calc-bottom" >
                         <div class="display-amount-div" >
                             <div class="display-amount"></div>
-                            <button class="submit-btn" >Submit</button>
+                            <button class="submit-btn" id="roi-submit">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="page" id="npv-page" >
                 <div class="page-header">
-                    <h1>Net Present Value</h1>
-                    <h4></h4>
+                    <h1>Net Present Value</h1><br>
+                    <h4>NPV calculates the current value of a series of future cash flows by discounting them back to today’s value. Then you subtract the initial investment to see if the project is profitable</h4>
                 </div>
                 <div class="calc-div" >
                     <div class="calc-top" >
@@ -131,7 +131,31 @@
                     <div class="calc-bottom" >
                         <div class="display-amount-div" >
                             <div class="display-amount"></div>
-                            <button class="submit-btn" >Submit</button>
+                            <button class="submit-btn" id="npv-submit" >Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page" id="irr-page" >
+                <div class="page-header">
+                    <h1>Internal Rate of Return</h1><br>
+                    <h4>IRR is the discount rate at which the net present value of all cash flows (both positive and negative) equals zero. It’s used to measure the profitability of potential investments. Because there’s no simple formula for IRR, you typically use an iterative method to find it</h4>
+                </div>
+                <div class="calc-div" >
+                    <div class="calc-top" >
+                        <div class="input-divs" >
+                            <h3>Cost</h3>
+                            <input class="inputs" />
+                        </div>
+                        <div class="input-divs" >
+                            <h3>Gain</h3>
+                            <input class="inputs" />
+                        </div>
+                    </div>
+                    <div class="calc-bottom" >
+                        <div class="display-amount-div" >
+                            <div class="display-amount"></div>
+                            <button class="submit-btn" id="irr-submit" >Submit</button>
                         </div>
                     </div>
                 </div>
