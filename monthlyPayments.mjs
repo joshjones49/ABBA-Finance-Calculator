@@ -12,26 +12,22 @@ export const monthlyRate = () => {
     let rate = parseInt(mp_rate.value);
     let years = parseInt(mp_years.value);
 
-        if(isNaN(principal) || isNaN(rate) || isNaN(years)) {
-            console.log('Empty Fields')
-            mp_amount.innerHTML = 'No fields can be empty'
-            mp_amount.style.fontSize = '50px';
-            console.log('Alerted')
-            return;
-        }
+    if(isNaN(principal) || isNaN(rate) || isNaN(years)) {
+        console.log('Empty Fields')
+        mp_amount.innerHTML = 'No fields can be empty'
+        mp_amount.style.fontSize = '50px';
+        console.log('Alerted')
+        return;
+    }
 
-    const monthRate = rate /12;
+    const monthRate = rate / 12;
     const totalPayments = years * 12;
 
     const payment = principal * (monthRate * Math.pow(1 + monthRate, totalPayments)) / (Math.pow(1 + monthRate, totalPayments) -1);
 
      mp_amount.innerHTML = '$'+payment.toFixed(2);
 
-    if (submitted) {
-        mp_submit.innerHTML = 'Clear';
-    } else {
-        mp_submit.innerHTML = 'Submit';
-    }
+    submitted ? mp_submit.innerHTML = 'Clear': mp_submit.innerHTML = 'Submit';
     console.log(submitted);
 }
 

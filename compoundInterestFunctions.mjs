@@ -28,11 +28,7 @@ export const compoundInterest = () => {
 
     Amount.innerHTML = "$"+amount.toFixed(2);
 
-    if (submitted) {
-        CI_Submit.innerHTML = 'Clear';
-    } else {
-        CI_Submit.innerHTML = 'Submit';
-    }
+    submitted ? CI_Submit.innerHTML = 'Clear': CI_Submit.innerHTML = 'Submit';
     console.log(submitted);
 }
 
