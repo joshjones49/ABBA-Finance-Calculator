@@ -24,7 +24,7 @@ export const compoundInterest = () => {
         return;
     }
 
-    let amount = principal * Math.pow(1 + rate / compound, compound*years)
+    let amount = principal * Math.pow(1 + rate / compound, compound * years)
 
     Amount.innerHTML = "$"+amount.toFixed(2);
 

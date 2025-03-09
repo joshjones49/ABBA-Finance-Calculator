@@ -1,5 +1,6 @@
 import * as func from './compoundInterestFunctions.mjs';
 import * as route from './routeFunctions.mjs';
+import * as mp from './monthlyPayments.mjs'
 
 document.addEventListener('DOMContentLoaded', () => {
     let container = 'MP';
@@ -29,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     route.MP_PAGE_BTN.addEventListener('click', () => {
         console.log('MP')
         updateDisplay('MP')
+    })
+
+    mp.mp_submit.addEventListener('click', () => {
+        mp.submitted ? mp.Clear() : mp.monthlyRate()
     })
 
 })

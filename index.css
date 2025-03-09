@@ -73,6 +73,7 @@ img {
     width: 50vw;
     color: black;
     font-size: 60px;
+    text-align: center;
 }
 
 .home-page > h1 > span {
@@ -97,11 +98,11 @@ img {
 }
 
 #mp-page {
-    display: none;
+    display: flex;
 }
 
 #ci-page {
-    display: flex;
+    display: none;
 }
 
 /* =================================PAGE ELEMENTS============================================= */
@@ -126,7 +127,6 @@ img {
     flex-direction: column;
     height: 80%;
     width: 100%;
-    justify-content: space-between;
 }
 
 .calc-top {
@@ -135,6 +135,14 @@ img {
     height: 50%;
     justify-content: space-around;
     align-items: center;
+}
+
+.calc-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
 }
 
 .input-divs {
@@ -163,18 +171,10 @@ img {
     text-align: center;
 }
 
-.calc-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}
-
 .display-amount-div {
     background-color: var(--cerulean);
     width: 99%;
-    height: 40%;
+    height: 70%;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -192,6 +192,9 @@ img {
     background-color: white;
     border-radius: 10px 0px 0px 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .submit-btn {
