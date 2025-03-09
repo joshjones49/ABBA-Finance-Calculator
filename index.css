@@ -105,6 +105,14 @@ img {
     display: none;
 }
 
+#roi-page {
+    display: none;
+}
+
+#npv-page {
+    display: flex;
+}
+
 /* =================================PAGE ELEMENTS============================================= */
 /* HEADER */
 .page-header {

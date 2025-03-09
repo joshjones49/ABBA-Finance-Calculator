@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         route.HOME_PAGE.style.display = container === 'HOME' ? 'flex' : 'none';
         route.MP_PAGE.style.display = container === 'MP' ? 'flex' : 'none';
         route.ROI_PAGE.style.display = container === 'ROI' ? 'flex' : 'none';
+        route.NPV_PAGE.style.display = container === 'NPV' ? 'flex' : 'none';
+        route.IRR_PAGE.style.display = container === 'IRR' ? 'flex' : 'none';
     }
 
     //USED TO SUBMIT INPUTS AND CALCULATE AND THEN CLEAR INPUTS
@@ -39,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     route.ROI_PAGE_BTN.addEventListener('click', () => {
         updateDisplay('ROI')
+    })
+
+    route.NPV_PAGE_BTN.addEventListener('click', () => {
+        updateDisplay('NPV')
+    })
+
+    route.IRR_PAGE_BTN.addEventListener('click', () => {
+        updateDisplay('IRR')
     })
 
 })
