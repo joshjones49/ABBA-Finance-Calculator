@@ -98,7 +98,7 @@ img {
 }
 
 #mp-page {
-    display: flex;
+    display: none;
 }
 
 #ci-page {

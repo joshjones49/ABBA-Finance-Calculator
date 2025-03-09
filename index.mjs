@@ -3,13 +3,14 @@ import * as route from './routeFunctions.mjs';
 import * as mp from './monthlyPayments.mjs'
 
 document.addEventListener('DOMContentLoaded', () => {
-    let container = 'MP';
+    let container = '';
 
     const updateDisplay = (page) => {
         container = page
         route.CI_PAGE.style.display = container === 'CI' ? 'flex' : 'none';
         route.HOME_PAGE.style.display = container === 'HOME' ? 'flex' : 'none';
         route.MP_PAGE.style.display = container === 'MP' ? 'flex' : 'none';
+        route.ROI_PAGE.style.display = container === 'ROI' ? 'flex' : 'none';
     }
 
     //USED TO SUBMIT INPUTS AND CALCULATE AND THEN CLEAR INPUTS
@@ -34,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mp.mp_submit.addEventListener('click', () => {
         mp.submitted ? mp.Clear() : mp.monthlyRate()
+    })
+
+    route.ROI_PAGE_BTN.addEventListener('click', () => {
+        updateDisplay('ROI')
     })
 
 })
