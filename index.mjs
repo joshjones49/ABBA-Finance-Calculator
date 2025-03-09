@@ -1,5 +1,5 @@
-import * as func from './compoundInterestFunctions.mjs';
-import * as route from './routeFunctions.mjs';
+import * as ci from './compoundInterestFunctions.mjs';
+import * as route from './routeElements.mjs';
 import * as mp from './monthlyPayments.mjs'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,47 +7,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateDisplay = (page) => {
         container = page
-        route.CI_PAGE.style.display = container === 'CI' ? 'flex' : 'none';
-        route.HOME_PAGE.style.display = container === 'HOME' ? 'flex' : 'none';
-        route.MP_PAGE.style.display = container === 'MP' ? 'flex' : 'none';
-        route.ROI_PAGE.style.display = container === 'ROI' ? 'flex' : 'none';
-        route.NPV_PAGE.style.display = container === 'NPV' ? 'flex' : 'none';
-        route.IRR_PAGE.style.display = container === 'IRR' ? 'flex' : 'none';
+        route.ci_page.style.display = container === 'CI' ? 'flex' : 'none';
+        route.home_page.style.display = container === 'HOME' ? 'flex' : 'none';
+        route.mp_page.style.display = container === 'MP' ? 'flex' : 'none';
+        route.roi_page.style.display = container === 'ROI' ? 'flex' : 'none';
+        route.npv_page.style.display = container === 'NPV' ? 'flex' : 'none';
+        route.irr_page.style.display = container === 'IRR' ? 'flex' : 'none';
     }
 
-    //USED TO SUBMIT INPUTS AND CALCULATE AND THEN CLEAR INPUTS
-    func.CI_Submit.addEventListener('click', () => {
-        func.submitted ? func.Clear() : func.compoundInterest()
-    })
-
-    route.CI_PAGE_BTN.addEventListener('click', () => {
-        console.log('CI')
-        updateDisplay('CI')
-    })
-
-    route.HOME_PAGE_BTN.addEventListener('click', () => {
-        console.log('HOME')
-        updateDisplay('HOME')
-    })
-
-    route.MP_PAGE_BTN.addEventListener('click', () => {
-        console.log('MP')
-        updateDisplay('MP')
+    //==============USED TO SUBMIT, CALCULATE, AND CLEAR INPUTS
+    ci.ci_submit.addEventListener('click', () => {
+        ci.submitted ? ci.Clear() : ci.compoundInterest()
     })
 
     mp.mp_submit.addEventListener('click', () => {
         mp.submitted ? mp.Clear() : mp.monthlyRate()
     })
 
-    route.ROI_PAGE_BTN.addEventListener('click', () => {
+    //===============EVENT LISTENERS THAT CHANGE DISPLAYS
+    route.home_page_btn.addEventListener('click', () => {
+        console.log('HOME')
+        updateDisplay('HOME')
+    })
+
+    route.ci_page_btn.addEventListener('click', () => {
+        console.log('CI')
+        updateDisplay('CI')
+    })
+
+    route.mp_page_btn.addEventListener('click', () => {
+        console.log('MP')
+        updateDisplay('MP')
+    })
+
+    route.roi_page_btn.addEventListener('click', () => {
         updateDisplay('ROI')
     })
 
-    route.NPV_PAGE_BTN.addEventListener('click', () => {
+    route.npv_page_btn.addEventListener('click', () => {
         updateDisplay('NPV')
     })
 
-    route.IRR_PAGE_BTN.addEventListener('click', () => {
+    route.irr_page_btn.addEventListener('click', () => {
         updateDisplay('IRR')
     })
 

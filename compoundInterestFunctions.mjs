@@ -4,7 +4,7 @@ export const Rate = document.querySelector('#Rate');
 export const xCompound = document.querySelector('#xCompounded');
 export const Years = document.querySelector('#Years');
 export const Amount = document.querySelector('#ci-amount');
-export const CI_Submit = document.querySelector('#ci-submit');
+export const ci_submit = document.querySelector('#ci-submit');
 export let submitted = false;
 
 //function to calculate compound interest
@@ -28,7 +28,7 @@ export const compoundInterest = () => {
 
     Amount.innerHTML = "$"+amount.toFixed(2);
 
-    submitted ? CI_Submit.innerHTML = 'Clear': CI_Submit.innerHTML = 'Submit';
+    submitted ? ci_submit.innerHTML = 'Clear': ci_submit.innerHTML = 'Submit';
     console.log(submitted);
 }
 
@@ -39,7 +39,7 @@ export const compoundInterest = () => {
     Rate.value = "";
     xCompound.value = "";
     Years.value = "";
-    CI_Submit.innerHTML = 'Submit'
+    ci_submit.innerHTML = 'Submit'
     Amount.innerHTML = "";
     console.log(submitted)
 }
