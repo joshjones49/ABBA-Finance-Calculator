@@ -166,7 +166,8 @@ img {
     justify-content: space-around;
     align-items: center;
     color: white;
-    box-shadow: 0px 0px 4px gray;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
 }
 
 .input-divs > h3 {
@@ -190,7 +191,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 4px gray;
+    box-shadow: 0px 0px 10px black;
 }
 
 .amount {

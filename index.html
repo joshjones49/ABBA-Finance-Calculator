@@ -122,25 +122,23 @@
                 <div class="calc-div" >
                     <div class="calc-top" >
                         <div class="input-divs" >
-                            <h3>Cost</h3>
-                            <input class="inputs" />
+                            <h3>Initial Investment</h3>
+                            <input class="inputs" id="npv-investment"/>
                         </div>
                         <div class="input-divs" >
-                            <h3>Gain</h3>
-                            <input class="inputs" />
+                            <h3>Discount Rate</h3>
+                            <input class="inputs" id="npv-discount-rate" placeholder="Ex: 3 will equal 3%"/>
                         </div>
                         <div class="input-divs" >
-                            <h3>Cost</h3>
-                            <input class="inputs" />
-                        </div>
-                        <div class="input-divs" >
-                            <h3>Gain</h3>
-                            <input class="inputs" />
+                            <h3>Cash Flows</h3>
+                            <input class="inputs" id="npv-cashflows" placeholder="Ex: 1000, 2000 etc."/>
                         </div>
                     </div>
                     <div class="calc-bottom" >
                         <div class="display-amount-div" >
-                            <div class="display-amount"></div>
+                            <div class="display-amount">
+                                <h1 class="amount" id="npv-amount" ></h1>
+                            </div>
                             <button class="submit-btn" id="npv-submit" >Submit</button>
                         </div>
                     </div>
