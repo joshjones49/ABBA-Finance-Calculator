@@ -2,6 +2,7 @@ import * as ci from './compoundInterestFunctions.mjs';
 import * as route from './routeElements.mjs';
 import * as mp from './monthlyPayments.mjs';
 import * as roi from './returnOnInvestment.mjs';
+import * as npv from './netPresentValue.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     //==============USED TO SUBMIT, CALCULATE, AND CLEAR INPUTS
@@ -16,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     roi.roi_submit.addEventListener('click', () => {
         console.log('ROI SUBMITTED')
         roi.submitted ? roi.Clear() : roi.returnOnInvestment()
+    })
+
+    npv.npv_submit.addEventListener('click', () => {
+        npv.submitted ? npv.Clear() : npv.netPresentValue();
     })
 
     //===============EVENT LISTENERS THAT CHANGE DISPLAYS
