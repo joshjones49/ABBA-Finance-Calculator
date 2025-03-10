@@ -72,8 +72,19 @@ img {
     height: 80vh;
     width: 50vw;
     color: black;
-    font-size: 60px;
     text-align: center;
+}
+
+.home-page > h1 {
+    font-size: 100px;
+}
+
+.home-page > h2 {
+    font-size: 70px;
+}
+
+.home-page > h3 {
+    font-size: 25px;
 }
 
 .home-page > h1 > span {
@@ -94,7 +105,7 @@ img {
 }
 
 .home-page {
-    display: none;
+    display: flex;
 }
 
 #mp-page {
@@ -110,7 +121,7 @@ img {
 }
 
 #npv-page {
-    display: flex;
+    display: none;
 }
 
 #irr-page {

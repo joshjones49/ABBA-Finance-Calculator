@@ -9,7 +9,7 @@ export const netPresentValue = () => {
     submitted = !submitted;
 
     let investment = parseInt(npv_investment.value);
-    let rate = parseInt(npv_discount_rate.value) / 100;
+    let rate = parseFloat(npv_discount_rate.value) / 100;
     let cashflow = npv_cashflows.value;
     
     let array = [];
