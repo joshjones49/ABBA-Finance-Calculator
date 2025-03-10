@@ -19,7 +19,7 @@ Measures the profitability or efficiency of an investment relative to its cost
 
 ---
 ## Net Present Value
-**INCOMPLETE**  
+**COMPLETED**  
 Calculates the current value of a series of future cash flows by discounting them back to today’s value. Then you subtract the initial investment to see if the project is profitable  
 
 ---
