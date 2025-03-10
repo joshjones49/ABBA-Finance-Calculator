@@ -110,11 +110,11 @@ img {
 }
 
 #npv-page {
-    display: none;
+    display: flex;
 }
 
 #irr-page {
-    display: flex;
+    display: none;
 }
 /* =================================PAGE ELEMENTS============================================= */
 /* HEADER */
