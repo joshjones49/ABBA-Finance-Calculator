@@ -1,6 +1,7 @@
 import * as ci from './compoundInterestFunctions.mjs';
 import * as route from './routeElements.mjs';
-import * as mp from './monthlyPayments.mjs'
+import * as mp from './monthlyPayments.mjs';
+import * as roi from './returnOnInvestment.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     //==============USED TO SUBMIT, CALCULATE, AND CLEAR INPUTS
@@ -10,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mp.mp_submit.addEventListener('click', () => {
         mp.submitted ? mp.Clear() : mp.monthlyRate()
+    })
+
+    roi.roi_submit.addEventListener('click', () => {
+        console.log('ROI SUBMITTED')
+        roi.submitted ? roi.Clear() : roi.returnOnInvestment()
     })
 
     //===============EVENT LISTENERS THAT CHANGE DISPLAYS
